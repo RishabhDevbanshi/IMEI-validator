@@ -4,7 +4,7 @@ const route = express.Router();
 
 
 route.get("/",(req,res)=>{
-    res.send('Send Request to endpoint "<strong>/imei</strong>" to validate your IMEI number');
+    res.send('Send GET Request to endpoint "<strong>/imei</strong>" to validate your IMEI number');
 })
 route.get("/imei", checkIMEI);
 
